@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+        
+        @font-face {
+            font-family: 'Ordinary Medium';
+            src: url('Ordinary/Ordinary-Medium.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Ordinary Bold';
+            src: url('Ordinary/Ordinary-Bold.ttf') format('truetype');
+        }
+
+        :root {
+            --font01: 'Nunito Sans';            
+            --font02: 'Ordinary Medium';
+            --font03: 'Ordinary Bold';
+
+            --cor1: #f8f8f8;
+            --cor2: #6f976f;
+            --cor3: #344734;
+            --cor4: #1a1a1a;
+            --cor5: #2d2d2d;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: var(--font01);
+        }
+
+        header {
+            background-image: linear-gradient(165deg, var(--cor2), var(--cor3));
+            height: 100px;
+        }
+
+        header > div {
+            min-width: 320px;
+            max-width: 950px;
+            margin: auto;
+        }
+
+        header > div > h1 {
+            font-family: var(--font02);
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            padding: 20px 0px 0px 20px;
+            color: #f8f8f8;
+            display: flex;
+            width: 200px;
+        }
+
+        main {
+            min-width: 300px;
+            max-width: 950px;
+            margin: auto;
+            padding: 10px 20px 20px 20px;
+            background-color: var(--cor1);
+            border-radius: 0px 0px 5px 5px;
+            border: 1px solid #d4d4d4;
+        }
+        
+        article > h2 {
+            font-size: 1.7em;
+            font-weight: 800;
+            color: var(--cor4);
+            margin: 30px 0px 20px 0px;
+        }
+
+        article > p {
+            color: var(--cor5);
+            text-align: justify;
+            text-indent: 20px;
+            font-size: 1.05em;
+        }
+
+        img {
+            width: 90%;
+            margin: 30px auto 0px auto;
+            display: block;
+        }
+
+        aside {
+            background-color: var(--cor3);
+            border-radius: 15px 0px; 
+            margin: 15px auto 0px auto;
+            box-shadow: 2px 2px 5px 0px #00000069;
+            width: 90%;
+        }
+
+        aside > h3 {
+            color: var(--cor1);
+            font-size: 1.3em;
+            background-color: var(--cor2);
+            border-radius:  15px 0px 0px 0px;
+            padding: 3px 12px;
+        } 
+
+        aside > div {
+            padding: 13px;
+        }
+
+        aside > div > p {
+            color: var(--cor1);
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            color: var(--cor4);
+            font-family: var(--font02);
+            background-color: #f5f5ff;
+            height: 100px;
+            margin: 50px 0px 0px 0px;
+        }
+
+        footer > div {
+            min-width: 300px;
+            max-width: 950px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        footer > div > p {
+            font-family: var(--font02);
+            margin: 10px 0px 0px 10px;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        p > a {
+            font-family: var(--font03);
+            color: #f8044a;
+            text-decoration: none;
+        }
+
+        p > a:hover{
+            color: #cf053e;
+            text-decoration: 1.5px underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Olá, mundo</h1>
+        </div>
+    </header>
+    <main>
+        <section id="sport">
+            <article id="soccer">
+                <h2>
+                    Futebol
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, assumenda. Hic sapiente in, at alias earum iste consequatur illo accusamus. Nobis possimus recusandae nisi, dolore porro error voluptatem temporibus voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur doloribus modi tenetur reprehenderit! Rerum voluptatum voluptates vitae, impedit saepe tenetur blanditiis nemo quaerat accusamus laboriosam mollitia similique adipisci quae quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi saepe libero facilis nisi optio sit, itaque dicta labore illo. Nobis, laboriosam dolorum voluptatum quo ea quod cumque voluptas optio temporibus.
+                </p>
+                <img src="https://ufmg.br/thumbor/D6gTEKc3_MHN6Crovy718VMfhio=/0x0:2052x1371/712x474/https://ufmg.br/storage/d/1/8/2/d182538775b056b88e593bc4dd73b655_15302000519104_1572147793.jpg" alt="">
+                <aside>    
+                    <h3>
+                        Curiosidade
+                    </h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi tenetur aliquam ipsum laborum possimus, magni explicabo animi quos aliquid enim ipsa alias laboriosam dolor beatae quibusdam voluptates. Et, corporis molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium atque perspiciatis r consectetur sequi nemo dolore ipsam ullam harum beatae!
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore voluptate hic odit quam soluta dignissimos autem quo similique excepturi repellat deleniti consequuntur.
+                        </p>
+                        
+                    </div>
+                </aside>
+            </article>
+
+            <article id="basktball">
+                <h2>
+                    Basquete
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, assumenda. Hic sapiente in, at alias earum iste consequatur illo accusamus. Nobis possimus recusandae nisi, dolore porro error voluptatem temporibus voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur doloribus modi tenetur reprehenderit! Rerum voluptatum voluptates vitae, impedit saepe tenetur blanditiis nemo quaerat accusamus laboriosam mollitia similique adipisci quae quisquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi saepe libero facilis nisi optio sit, itaque dicta labore illo. Nobis, laboriosam dolorum voluptatum quo ea quod cumque voluptas optio temporibus.
+                </p>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolor quibusdam? Sit ipsum culpa iure, voluptas incidunt error possimus dignissimos impedit. Iure, corrupti alias itaque obcaecati beatae cum rerum recusandae!
+                </p>
+
+                <img src="https://www.francabasquete.com.br/storage/noticias/35fde-sesi-franca-basquete-e-superado-pelos-nets-na-pre-temporada-da-nba.jpeg" alt="">
+                <aside>                   
+                    <h3>
+                            Curiosidade
+                    </h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, cumque. Consectetur error aperiam nostrum iure, voluptate aliquid officiis perspiciatis qui minus optio, alias eveniet officia assumenda. Architecto voluptatibus totam at. Lorem, ipsum dolor sit amet consectetur   labore impedit ipsum dolorum vero, quasi dignissimos accusamus, quas sunt saepe.
+                        </p>
+                    </div>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Made by 
+                <a href="https://www.instagram.com/jacksonrv_" target="_blank">
+                    Jackson
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

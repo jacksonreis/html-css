@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo Responsivo</title>
+    <style>
+
+        * {
+            margin: 0px;
+        }
+
+        main {
+            max-width: 500px;
+            height: 1000px;
+            background-color: bisque;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .div-container {
+            max-width: 400px;
+            min-width: 321px;
+            margin: auto;
+        }
+
+        .div-video {
+            width: 100%;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .div-video iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="div-container">
+            <div class="div-video">
+                <iframe src="https://www.youtube.com/embed/drRNlyD-bIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

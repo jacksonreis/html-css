@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        code {
+            color: #474747;
+        }
+
+        .inputs {
+            padding: 4px;
+            font-size: 0.85em;
+            outline: none;
+            color: #2c2c2c;
+            border: 1.5px solid #707070;
+            border-radius: 3px;
+        }
+
+        #nome:focus {
+            color: red;
+            border: 1.5px solid #b900aa;
+        }
+
+        #numero:focus {
+            color: blue;
+            border: 1.5px solid #006e00;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classe: <code>:focus</code></h1>
+    <p>A pseudo-classe :focus do CSS é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse (ex: um campo de um formulário).</p>
+    <input id="nome" class="inputs" type="text" value="Seu nome">
+    <input id="numero" class="inputs" type="text" value="Seu número">
+</body>
+</html>

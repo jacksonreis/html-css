@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <link rel="shortcut icon" href="nerd.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        body {
+            color: #242424;
+            font-family: 'Lato';
+        }
+
+        img {
+            box-shadow: 0px 2px 10px 1px #0000004b;
+            border-radius: 15px;
+            border: 1px solid #242424;
+        }
+    </style>
+</head>
+<body>
+    <h1>NFTs</h1>
+    <picture>
+        <source media="(max-width: 700px)" srcset="nfts/nft-p.png" type="image/png">
+        <img id="img1" src="nfts/nft-m.png" alt="NFT">
+        <p>
+            <a id="link1" href="pdfs/nft1.pdf" download="nft1.pdf" type="application"></a>
+        </p>
+        <p>
+            <a id="linkfora1" href="pdfs/PDF - nft.pdf" target="_blank" rel="external"></a>
+        </p>
+    </picture>
+    <picture>
+        <source media="(max-width: 700px)" srcset="nfts/nft2-p.png" type="image/png">
+        <img id="img2" src="nfts/nft2-m.png" alt="NFT">
+        <p>
+            <a id="link2" href="pdfs/nft2.pdf" download="nft2.pdf" type="application"></a>
+        </p>
+        <p>
+            <a id="linkfora2" href="pdfs/nft2.pdf" target="_blank" rel="external"></a>
+        </p>
+    </picture>
+
+    <script>
+      let img1 = document.getElementById('img1')
+      let img2 = document.getElementById('img2')
+      img1.addEventListener('mouseenter', entrar1)
+      img2.addEventListener('mouseenter', entrar2)
+      
+      let link1 = document.getElementById('link1')
+      let linkfora1 = document.getElementById('linkfora1')
+
+      let link2 = document.getElementById('link2')
+      let linkfora2 = document.getElementById('linkfora2') 
+
+      function entrar1 () {
+        link2.innerHTML = ''
+        link1.innerHTML = 'Fazer download'
+        linkfora1.innerHTML = 'Ver imagem'
+        linkfora2.innerHTML = ''
+      }
+
+      function entrar2() {
+        link1.innerHTML = ''
+        link2.innerHTML = 'Fazer download'
+        linkfora2.innerHTML = 'Ver imagem'
+        linkfora1.innerHTML = ''
+      }
+
+    </script>
+</body>
+</html>
