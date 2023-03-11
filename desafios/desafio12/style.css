@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
     --font-title: 'Passion One', cursive;
@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, cursive;
 }
 
 header {
@@ -42,6 +42,45 @@ header h1 {
     font-family: var(--font-title);
 }
 
+header h1::first-letter {
+    text-transform: uppercase;
+}
+
+header p {
+    text-align: center;
+}
+
+header a {
+    color: var(--cor-white);
+    font-weight: 800;   
+    text-decoration: none;      
+}
+
 main p {
+    font-weight: 500;
+    font-size: 35px;
+    width: 400px;
     font-family: var(--font-padrao);
+
+    margin-bottom: 120px;
+    margin-left: 30px;
+}
+
+.img-scroll {
+    height: 650px;
+    width: 100;
+    background: pink url(imagens/background001.jpg) top center no-repeat fixed;
+    margin-bottom: 100px;
+
+    position: relative;
+}
+
+.img-scroll > p {   
+    color: var(--cor-white);
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
 }
