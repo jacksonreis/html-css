@@ -24,22 +24,23 @@ body {
 header {
     color: var(--cor-white);
     background-color: var(--cor-black);
-    height: 224px;
+    max-height: 310px;
+
     margin-bottom: 100px;
 
-    position: relative;
+   
 }
 
 #texts {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 header h1 {
     font-family: var(--font-title);
+    font-variant: small-caps;
+    font-size: 10vw;
+    text-align: center;
 }
 
 header h1::first-letter {
@@ -58,18 +59,25 @@ header a {
 
 main p {
     font-weight: 500;
-    font-size: 35px;
-    width: 400px;
+    font-size: 3.5vw;
+    line-height: 7vw;
+
+    max-width: 800px;
+    min-width: 400px;
+    max-height: 600px;
+    min-height: 200px;
+
     font-family: var(--font-padrao);
 
     margin-bottom: 120px;
     margin-left: 30px;
+    padding-right: 20px;
 }
 
 .img-scroll {
-    height: 650px;
+    height: 65vw;
     width: 100;
-    background: pink url(imagens/background001.jpg) top center no-repeat fixed;
+    background: pink url(imagens/background001.jpg) center center  no-repeat fixed;
     margin-bottom: 100px;
 
     position: relative;
@@ -80,7 +88,7 @@ main p {
     background-color: rgba(0, 0, 0, 0.377);
     padding: 20px;
     position: absolute;
+    left: 25%;  
     top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* 1-left  2-top*/
 }
