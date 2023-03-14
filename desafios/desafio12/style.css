@@ -18,6 +18,7 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: Verdana, cursive;
 }
 
@@ -25,15 +26,11 @@ header {
     color: var(--cor-white);
     background-color: var(--cor-black);
     max-height: 310px;
-
-    margin-bottom: 100px;
-
-   
 }
 
 #texts {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 header h1 {
@@ -62,6 +59,11 @@ main p {
     font-weight: 500;   
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
 pre {
     font-family: var(--font-padrao);
     white-space: pre-line;
@@ -71,7 +73,6 @@ pre {
 }
 
 .p-normal {
-    margin-bottom: 90px;
     margin-left: 30px;
 }
 
@@ -82,9 +83,6 @@ pre {
 
     height: 65vw;
     min-height: 460px;
-    margin-bottom: 100px;
-
-
 }
 
 
@@ -94,7 +92,6 @@ pre {
 
     height: 65vw;
     min-height: 460px;
-    margin-bottom: 100px;
 }
 
 
