@@ -36,7 +36,7 @@ header {
 header h1 {
     font-family: var(--font-title);
     font-variant: small-caps;
-    font-size: 10vw;
+    font-size: max(8vw, 60px);
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ pre {
     font-family: var(--font-padrao);
     white-space: pre-line;
 
-    font-size: 3.5vw;
+    font-size: max(20px, 2.5vw);
     line-height: 2em;
 }
 
@@ -78,7 +78,7 @@ pre {
     position: relative;
     background: pink url(imagens/background001.jpg) right center no-repeat fixed;
 
-    height: 65vw;
+    height: max(350px, 65vw);
 }
 
 
@@ -86,7 +86,7 @@ pre {
     position: relative;
     background: pink url(imagens/background002.jpg) right center  no-repeat fixed;
 
-    height: 65vw;
+    height: max(350px, 65vw);
 }
 
 
