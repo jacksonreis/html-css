@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos Responsivos</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            height: 100vh;
+        }
+
+        #caixa1 {
+            background-color: antiquewhite;
+            height: 50%;
+
+            position: relative;
+        }
+        #caixa1 > h1 {
+            font-size: max(50px, 5vw);
+        }
+
+
+        #caixa2 {
+            background-color: aquamarine;
+            height: 50%;
+
+            position: relative;
+        } 
+        #caixa2 > h1 {
+            font-size: min(100px, 7vw);
+        }
+
+        h1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="caixa1">
+            <h1>texto responsivo (max)</h1>
+        </section>
+        <section id="caixa2">
+            <h1>texto responsivo (min)</h1>
+        </section>
+    </main>
+</body>
+</html>
