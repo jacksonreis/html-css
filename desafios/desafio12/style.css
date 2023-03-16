@@ -36,7 +36,7 @@ header {
 header h1 {
     font-family: var(--font-title);
     font-variant: small-caps;
-    font-size: max(8vw, 60px);
+    font-size: max(6.8vw, 50px);
     text-align: center;
 }
 
