@@ -73,6 +73,10 @@ pre {
     font-size: max(20px, 2.5vw);
 }
 
+.p-normal pre {
+    margin-bottom: 10vw;
+}
+
 .imagens {
     box-shadow: inset 0px 5px 15px 1px #0000008c;
     padding-top: 10vw;
