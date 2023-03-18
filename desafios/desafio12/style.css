@@ -75,21 +75,23 @@ pre {
 
 .p-normal pre {
     margin-bottom: 10vw;
+    margin-top: 7vw;
 }
 
 .imagens {
     box-shadow: inset 0px 5px 15px 1px #0000008c;
     padding-top: 15vw;
     padding-bottom: 15vw;
-    background-size: cover;
 }
 
 #img-1 {
     background: pink url(imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
 }
 
 #img-2 {
     background: pink url(imagens/background002.jpg) right center no-repeat fixed;
+    background-size: cover;
 }
 
 .imagens pre {    
@@ -109,12 +111,13 @@ footer {
     height: 115px;
     margin-top: 30px;
 
+    border-top: 1px solid #cccccc;
     position: relative;
 }
 
 footer p {
     font-family: var(--font-padrao);
-    font-size: 20px;
+    font-size: 17px;
     position: absolute;
     left: 50%;
     top: 50%;
