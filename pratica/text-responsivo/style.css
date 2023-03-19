@@ -12,6 +12,7 @@
 :root {
     --cor-white: #ffffff;
     --cor-pink: #FF0078;
+    --cor-blue: #0075F2;
 
     --font-montserrat: 'Montserrat', sans-serif;
     --font-drop: 'Grandstander', cursive;
@@ -34,7 +35,7 @@ header {
 }
 
 header h1 {
-    font-size: max(22px, 1.5vw);
+    font-size: max(25px, 1.5vw);
     font-weight: 500;
     max-width: 700px;
     min-width: 260px;
@@ -64,19 +65,31 @@ section {
 }
 
 #section1 p {
-    font-size: min(18px, 4.3vw);
+    font-size: min(20px, 3.8vw);
     font-weight: 500;
-    max-width: 600px;
+    max-width: 700px;
     min-width: 250px;
     margin: auto;
+    text-align: center;
 }
 
-#section1 strong {
+.strong-pink {
     color: var(--cor-pink);
+}
+
+.strong-blue {
+    color: var(--cor-blue);
 }
 
 #logo-drop {
     display: block;
     width: 100px;
     margin: auto;
+}
+
+#logo-figma {
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 15px;
 }
