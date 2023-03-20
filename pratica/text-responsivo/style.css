@@ -23,15 +23,16 @@
 body {
     font-family: var(--font-montserrat);
     color: var(--cor-white);
-    background-color: black;
+
     height: 100vh;
+
+    background: url(midia/img-body.jpg) center center no-repeat fixed;
+    background-size: 100% 100%;
 }
 
 header {
     font-family: var(--font-montserrat);
     height: 200px;
-    background: pink url(midia/header-1.jpg) right center no-repeat scroll;
-    background-size: 100% 100%;
     
     position: relative;
 }
@@ -68,8 +69,6 @@ section {
 #section1 {
     max-width: 950px;
     margin: 40px auto;
-
-    background-color: #000000;
 }
 
 #section1 p {
@@ -108,7 +107,7 @@ section {
 }
 
 #bt-inscrever:hover {
-    color: rgb(243, 243, 243);
+    color: #f3f3f3;
     background-color: #0068d6;
     cursor: pointer;
 }
