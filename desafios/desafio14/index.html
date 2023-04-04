@@ -12,12 +12,13 @@
 
         table {
             border-collapse: collapse;
-            
+            width: 300px;
+            padding-bottom: 500px;
         }
 
         td, th{
             border: 1px solid black;
-            padding: 13px 8px;
+            padding: 10px 8px;
         }
 
         thead {
@@ -25,14 +26,15 @@
             color: white;
         }
 
-        #notas {
-            padding: 0px 25px;
-            height: -5px;
+        thead tr :nth-child()
+
+        tbody :nth-child(6) {
+            background-color: #888888;
+            color: white;
         }
 
-        .nota1 {
-            padding: 0px;
-            width: 20px;
+        #th-notas {
+            padding: 0px 30px;
         }
     </style>
 </head>
@@ -40,22 +42,24 @@
     <table>
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th id="notas">
-                    Notas
-                    <td>Nota1</td>
-                    <td>Nota2</td>
-                </th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th id="th-notas" colspan="2">Notas</th>
+                
                 <th>Média</th>
+            </tr>
+            <tr>
+                <th>Notas</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
             </tr>
         </thead>
 
         <tbody>
-            <tr>
                 <th rowspan="5">Exatas</th>
                 <tr>
                     <td>Matemática</td>
+                    
                     <td class="nota1">0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
@@ -78,7 +82,10 @@
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
-            </tr>
+                <tr>
+                    <th colspan="4">Média de Exatas</th>
+                    <td><strong>0.0</strong></td>
+                </tr>
         </tbody>
     </table>
 </body>
