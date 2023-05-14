@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        iframe {
+            width: 375px;
+            height: 630px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegando em Iframes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat illo laudantium nemo molestiae, minima commodi quis, dolorum natus, aperiam odio eos nobis? Numquam labore corporis consequuntur exercitationem, fugit impedit earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, omnis corporis? Hic, debitis dolorem amet nemo dolorum beatae aspernatur! Corporis voluptatum quaerat nostrum accusamus culpa ducimus suscipit iure. Cum, dolore!</p>
+
+    <ul>
+        <li><a href="pag-extras/pag01.html" target="container-frame">Carregar página 1</a></li>
+        <li><a href="pag-extras/pag02.html" target="container-frame">Carregar página 2</a></li>        
+        <li><a href="pag-extras/pag03.html" target="container-frame">Carregar página 3</a></li>
+    </ul>
+
+    <iframe name="container-frame" src="pag-extras/thumb.html" frameborder="0">
+        <p>Desculpe, seu navegador não é compatível com isso.</p>
+    </iframe>
+</body>
+</html>
