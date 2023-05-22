@@ -12,6 +12,8 @@
 
         iframe {
             border: 2px dashed black;
+            height: 500px;
+            width: 300px;
         }
     </style>
 </head>
@@ -22,7 +24,7 @@
         <li><a href="pag-extras/pag02.html" target="frames">Segunda página</a></li>
         <li><a href="pag-extras/pag03.html" target="frames">Terceira página</a></li>
     </ul>
-    <iframe src="" name="frames" frameborder="0">
+    <iframe  name="frames" frameborder="0" srcdoc="<h1>clique em algum link acima!</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo blanditiis corrupti molestias ad. Cum fugiat corrupti inventore incidunt quod nisi similique voluptatibus nemo ducimus quos hic reiciendis, voluptate beatae ut.</p>">
         Seu navegador não é compatível com isso
     </iframe>
 </body>
