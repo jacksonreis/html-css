@@ -5,8 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.js" autocomplete="on">
+        <p>
+            <label for="i-nome">Nome:</label> 
+            <input type="text" name="nome" id="i-nome">
+        </p>
+        <p>
+            <label for="i-sobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="i-sobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
 </body>
 </html>
