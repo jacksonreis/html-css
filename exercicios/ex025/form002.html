@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.js" method="get">
+    <form action="cadastro.js" method="POST">
         <p>
             <label for="id-usu">Usuário:</label>
-            <input type="text" name="nm-usu" id="id-usu">
+            <input type="text" name="nm-usu" id="id-usu" required>
         </p>
         <p>
             <label for="id-senha">Senha:</label>
-            <input type="password" name="nm-senha" id="id-senha">
+            <input type="password" name="nm-senha" id="id-senha" required minlength="5" maxlength="10" size="20">
         </p>
+
         <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
