@@ -11,7 +11,7 @@
     <form action="cadastro.js" method="get" autocomplete="on">
         <p>
             <label for="id-nome">Nome</label>
-            <input type="text" name="nome" id="id-nome" required minlength="3" maxlength="30" placeholder="Nome completo" autocomplete="name">
+            <input type="text" name="nome" id="id-nome" required minlength="8" maxlength="30" placeholder="Nome completo" autocomplete="name">
         </p>
 
         <p>
@@ -20,18 +20,18 @@
         </p>
 
         <p>
-            <label for="id-mes">Período Letivo</label>
-            <input type="month" name="mes" id="id-mes">
+            <label for="id-mes" >Período Letivo</label>
+            <input type="month" name="mes" id="id-mes" required>
         </p>
 
         <p>
             <label for="id-dia">Dia da prova</label>
-            <input type="date" name="dia" id="id-dia">
+            <input type="date" name="dia" id="id-dia" required min="2023-01-27">
         </p>
 
         <p>
             <label for="i-hora">Horário da prova</label>
-            <input type="time" name="hora" id="id-hora">
+            <input type="time" name="hora" id="id-hora" required>
         </p>
 
         <p>
