@@ -15,8 +15,9 @@
         
         <p>
             <label for="id-date">Ano do dia dos Namorados</label>
-            <input type="date" name="date" id="id-date" min="2023-06-12" max="2023-06-12">
-        </p>
+            <input type="date" name="date" id="id-date" min="2023-06-12" max="2023-06-12" step=""> 
+            <!--isso é um comentário feito pelo atalho ("ctrl" "+" ";")-->
+       </p>
 
         <p>
             <label for="id-month">Mês do Dia dos Namorados</label>
@@ -25,12 +26,17 @@
 
         <p>
             <label for="id-time">Horário</label>
-            <input type="time" name="time" id="id-time" step="any">
+            <input type="time" name="time" id="id-time" step="120">
         </p>
 
         <p>
             <label for="id-nu">Numeros</label>
-            <input type="number" name="nu" id="id-nu" step="">
+            <input type="number" name="nu" id="id-nu" step="" min="0">
+        </p>
+
+        <p>
+            <label for="id-nu2">Numeros 2</label>
+            <input type="number" name="nu2" id="id-nu2" value="10" min="10" max="100" step="10">
         </p>
         <input type="submit" value="enviar">
     </form>    
