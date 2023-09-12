@@ -11,12 +11,13 @@
     <form action="cadastro.js" method="get" autocomplete="on">
         <p>
             <label for="id-email">E-mail</label>
-            <input type="email" name="email" id="id-email" autocomplete="email" required>
+            <input type="email" name="email" id="id-email" autocomplete="email" required placeholder="joaquim123@gmail.com">
         </p>
 
         <p>
             <label for="id-tel">Telefone</label>
-            <input type="tel" name="tel" id="id-tel" autocomplete="tel" required>
+            <input type="tel" name="tel" id="id-tel" autocomplete="tel" required
+            pattern="^\(\d{2}\)\[0-9]{4,5}-[0-9]{4}$" placeholder="(00) 00000-0000">
         </p>
 
         <!-- Estudar mais RegEx expressões regulares -->
