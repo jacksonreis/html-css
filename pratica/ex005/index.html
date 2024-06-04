@@ -6,6 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticando</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: pink;
+            width: 850px;
+            height: 100%;
+            margin: auto;
+            
+        }
+        #container-img {
+            
+        }
+        #container-img img{
+            width: 415px;
+        }
+        
+        #container-full {
+            width: 300px;
+            background-color: blue;
+        }
+
+        #container-dados {
+            height: 550px;
+            margin-bottom: 30px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        #div-buttons{
+            background-color: aqua;
+            width: 173px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .caixa {
+            background-color: rgb(255, 255, 255);
+        
+            display: inline-block;
+        }
+        #container-footer {
+            background-color: blueviolet;
+
+        }
+
+        #insta-logo {
+            width: 170px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,19 +68,28 @@
     </header>
 
     <main>
-        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaC94mBWu6SBTe6sfkTGZc4kipp2mQhTeqOMRGDl1xd77DGm_v" alt="">
-        <div id="container-full">
-            <input type="text">
-            <p></p>
-            <input type="text">
-            <p></p>
-            <input type="button">
+        <div class="caixa" id="container-img">
+            <img src="insta-login.png" alt="">
         </div>
-        <div id="container-footer">
-            <p>
-                Não tem uma conta? 
-                <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a>
-            </p>
+        
+        <div class="caixa" id="container-full">
+            <div id="container-dados">
+                <img id="insta-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png" width="200px" alt="">
+                <div id="div-buttons">
+                    <input type="text">
+                    <p></p>
+                    <input type="text" placeholder="Senha">
+                    <p></p>
+                    <input type="button">
+                </div>
+            </div>
+        
+            <div id="container-footer">
+                <p>
+                    Não tem uma conta? 
+                    <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a>
+                </p>
+            </div>
         </div>
     </main>
 
